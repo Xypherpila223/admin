@@ -1,0 +1,107 @@
+/* Sidebars.css */
+
+.sidebar {
+    height: 100%;
+    width: 300px;
+    background-color: #000; /* Black background color */
+    position: fixed;
+    top: 0;
+    left: -300px;
+    transition: left 0.3s, width 0.3s;
+    padding-top: 20px;
+    color: #fff; /* White text color */
+    z-index: 999;
+  }
+  
+  .sidebar.open {
+    left: 0;
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar ul li a {
+    display: block;
+    padding: 10px;
+    color: #fff; /* White text color */
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #333; /* Darker black hover color */
+  }
+  
+  .toggle-sidebar {
+    position: absolute;
+    top: 10px;
+    left: 285px;
+    background-color: #000; /* Black background color */
+    color: #fff; /* White text color */
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s, transform 0.3s;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    z-index: 1000; /* Ensure the button is above the sidebar content */
+  }
+  
+  .toggle-sidebar.hide {
+    opacity: 0;
+  }
+  
+  .toggle-sidebar::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid #fff; /* White border color */
+    border-bottom: 8px solid #fff; /* White border color */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s;
+  }
+  
+  .rotating {
+    animation: rotate 1s linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .sidebar {
+      width: 200px;
+      left: -200px;
+    }
+  
+    .toggle-sidebar {
+      left: 10px;
+    }
+  }
+  

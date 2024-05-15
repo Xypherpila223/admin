@@ -1,0 +1,39 @@
+.view-container {
+    background-color: #00bcd4; /* Blue background */
+    max-width: 650px; /* Maximum width */
+    border: 1px solid #ccc; /* Light grey border */
+    padding: 40px; /* Increased padding for content */
+    position: absolute; /* Position absolutely */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Translate back by 50% of own width and height */
+    width: 80%; /* Adjust the width as needed */
+  }
+  
+  .view-container h3 {
+    margin-top: 0; /* Remove default margin for heading */
+  }
+
+  h3 {
+    font-weight: bolder;
+    font-size: 25px;
+  }
+  
+  .view-container p {
+    margin-bottom: 20px; /* Increased bottom margin for paragraphs */
+  }
+
+  p {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .close-btn {
+    padding: 12px 24px; /* Increased padding for button */
+    background-color: #ff0000; /* Dark blue background */
+    color: #fff; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Cursor pointer on hover */
+  }
+  
