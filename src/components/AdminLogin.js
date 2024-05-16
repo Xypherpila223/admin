@@ -36,7 +36,7 @@ function AdminLogin() {
                 <div className="left-side">
                     <div className="logo">
                         <img src={studentImage} alt="Student Friendly Logo" />
-                        <div className="logo-text">STUDENT</div>
+                        <div className="logo-text">ADMIN</div>
                     </div>
                 </div>
                 <div className="right-side">
